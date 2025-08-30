@@ -1,3 +1,8 @@
+# Jenkins:
+<img width="1133" height="464" alt="image" src="https://github.com/user-attachments/assets/ad08f182-315b-4b1d-9f44-9237b68f2bbd" />
+<img width="1157" height="506" alt="image" src="https://github.com/user-attachments/assets/9092510a-5d87-4da2-ac0f-e14ae0d2da0c" />
+
+
 ## Installation of jenkins on EC2 Instance (Ubuntu).
 
 Install Jenkins, configure Docker as agent.
