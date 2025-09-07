@@ -23,19 +23,22 @@ Pre-Requisites:
 ### Run the below commands to install Java and Jenkins
 
 Install Java
+<img width="1883" height="348" alt="image" src="https://github.com/user-attachments/assets/e5e4688e-bb53-457f-b770-15dbd6ea99c5" />
+
 
 ```
 sudo apt update
-sudo apt install openjdk-17-jre
+sudo apt install openjdk-21-jre
 ```
 
 Verify Java is Installed
+<img width="1063" height="115" alt="image" src="https://github.com/user-attachments/assets/f6618c1a-ac06-499c-bbab-e8ea148bb36a" />
 
 ```
 java -version
 ```
 
-Now, you can proceed with installing Jenkins
+**Now, you can proceed with installing Jenkins**:
 
 ```
 curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
@@ -52,9 +55,9 @@ sudo apt-get install jenkins
 - EC2 > Instances > Click on <Instance-ID>
 - In the bottom tabs -> Click on Security
 - Security groups
-- Add inbound traffic rules as shown in the image (you can just allow TCP 8080 as well, in my case, I allowed `All traffic`).
+- Add inbound traffic rules as shown in the image you can just allow Custom TCP port number 8080.
 
-<img width="1187" alt="Screenshot 2023-02-01 at 12 42 01 PM" src="https://user-images.githubusercontent.com/43399466/215975712-2fc569cb-9d76-49b4-9345-d8b62187aa22.png">
+<img width="1836" height="299" alt="image" src="https://github.com/user-attachments/assets/8982e2d5-ecd4-414f-b105-c3744eee54ad" />
 
 
 ### Login to Jenkins using the below URL:
