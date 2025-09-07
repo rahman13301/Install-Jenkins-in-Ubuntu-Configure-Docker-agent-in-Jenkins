@@ -104,13 +104,14 @@ Wait for the Jenkins to be restarted.
 
 ## Docker Slave Configuration
 
-Run the below command to Install Docker
-
+Run the below command to Install Docker:
 ```
 sudo apt update
 sudo apt install docker.io
 ```
- 
+<img width="1568" height="310" alt="image" src="https://github.com/user-attachments/assets/19d7da36-6bfe-4ccf-be03-e9c22d1bd261" />
+
+
 ### Grant Jenkins user and Ubuntu user permission to docker deamon.
 
 ```
@@ -119,6 +120,8 @@ usermod -aG docker jenkins
 usermod -aG docker ubuntu
 systemctl restart docker
 ```
+<img width="791" height="114" alt="image" src="https://github.com/user-attachments/assets/c1091fc6-6e90-48b2-922e-09b04254b822" />
+
 
 Once you are done with the above steps, it is better to restart Jenkins.
 
