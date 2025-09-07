@@ -89,18 +89,6 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png">
 
-## Install the Docker Pipeline plugin in Jenkins:
-
-   - Log in to Jenkins.
-   - Go to Manage Jenkins > Manage Plugins.
-   - In the Available tab, search for "Docker Pipeline".
-   - Select the plugin and click the Install button.
-   - Restart Jenkins after the plugin is installed.
-   
-<img width="1392" alt="Screenshot 2023-02-01 at 12 17 02 PM" src="https://user-images.githubusercontent.com/43399466/215973898-7c366525-15db-4876-bd71-49522ecb267d.png">
-
-Wait for the Jenkins to be restarted.
-
 
 ## Docker Slave Configuration
 
@@ -121,9 +109,24 @@ usermod -aG docker ubuntu
 systemctl restart docker
 ```
 <img width="791" height="114" alt="image" src="https://github.com/user-attachments/assets/c1091fc6-6e90-48b2-922e-09b04254b822" />
+<img width="924" height="430" alt="image" src="https://github.com/user-attachments/assets/3d6a8a32-11a9-4b9d-80ec-f7218a49a3c8" />
+<img width="892" height="524" alt="image" src="https://github.com/user-attachments/assets/db559bde-1f64-4430-b6e0-7939611d69c5" />
 
 
 Once you are done with the above steps, it is better to restart Jenkins.
+
+## Install the Docker Pipeline plugin in Jenkins:
+
+   - Log in to Jenkins.
+   - Go to Manage Jenkins > Manage Plugins.
+   - In the Available tab, search for "Docker Pipeline".
+   - Select the plugin and click the Install button.
+   - Restart Jenkins after the plugin is installed.
+   
+<img width="1392" alt="Screenshot 2023-02-01 at 12 17 02 PM" src="https://user-images.githubusercontent.com/43399466/215973898-7c366525-15db-4876-bd71-49522ecb267d.png">
+
+Wait for the Jenkins to be restarted.
+
 
 ```
 http://<ec2-instance-public-ip>:8080/restart
