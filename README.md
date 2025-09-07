@@ -13,7 +13,8 @@ Install Jenkins, configure Docker as agent.
 - Instances(running)
 - Launch instances
 
-<img width="994" alt="Screenshot 2023-02-01 at 12 37 45 PM" src="https://user-images.githubusercontent.com/43399466/215974891-196abfe9-ace0-407b-abd2-adcffe218e3f.png">
+<img width="1820" height="754" alt="image" src="https://github.com/user-attachments/assets/31fa997e-507f-4f07-aca7-574fa61720d8" />
+
 
 ### Install Jenkins.
 
@@ -22,21 +23,19 @@ Pre-Requisites:
 
 ### Run the below commands to install Java and Jenkins
 
-Install Java
-<img width="1883" height="348" alt="image" src="https://github.com/user-attachments/assets/e5e4688e-bb53-457f-b770-15dbd6ea99c5" />
-
-
+**Install Java:**
 ```
 sudo apt update
 sudo apt install openjdk-21-jre
 ```
+<img width="1883" height="348" alt="image" src="https://github.com/user-attachments/assets/e5e4688e-bb53-457f-b770-15dbd6ea99c5" />
 
-Verify Java is Installed
-<img width="1063" height="115" alt="image" src="https://github.com/user-attachments/assets/f6618c1a-ac06-499c-bbab-e8ea148bb36a" />
 
+**Verify Java is Installed**:
 ```
 java -version
 ```
+<img width="1063" height="115" alt="image" src="https://github.com/user-attachments/assets/f6618c1a-ac06-499c-bbab-e8ea148bb36a" />
 
 **Now, you can proceed with installing Jenkins**:
 
