@@ -162,7 +162,23 @@ Wait for the Jenkins to be restarted.
 <img width="444" height="315" alt="image" src="https://github.com/user-attachments/assets/af8add8a-cb33-448d-9e43-50cd3c43cd10" />
 
 
-The docker agent configuration is now successful.
+## Similarly for "multi-stage-multi-agent" pipeline job:
+
+By this method, Jenkins master requested a docker to create 2 conatainers, in one container Maven targets are running and in another container Node JS related targets are running by using "Docker Pipeline" plugin we configured. Docker creates 2 containers, as soon as process is done it will terminate the conatainers. This method is suitable for multi stages for multi language application.
+
+<img width="898" height="249" alt="image" src="https://github.com/user-attachments/assets/cda282f6-0cad-4dab-bc30-0c9b022ac5b9" />
+
+
+<img width="1259" height="374" alt="image" src="https://github.com/user-attachments/assets/ca100c4e-757d-402b-a91b-e95ea911854f" />
+
+
+<img width="1382" height="685" alt="image" src="https://github.com/user-attachments/assets/0937e3de-2839-4895-b01a-2472710a546b" />
+
+
+<img width="1291" height="430" alt="image" src="https://github.com/user-attachments/assets/1003a478-15ba-476a-97fe-214ee03de0fb" />
+
+
+The project is successfully completed.
 
 
 
