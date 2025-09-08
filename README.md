@@ -158,6 +158,7 @@ Wait for the Jenkins to be restarted.
 
 
 **When there is a request a container is created, this is the approach and this is how saving the cost and time for worker node configuration upgrade.**
+
 <img width="444" height="315" alt="image" src="https://github.com/user-attachments/assets/af8add8a-cb33-448d-9e43-50cd3c43cd10" />
 
 
