@@ -121,15 +121,45 @@ Once you are done with the above steps, it is better to restart Jenkins.
    - In the Available tab, search for "Docker Pipeline".
    - Select the plugin and click the Install button.
    - Restart Jenkins after the plugin is installed.
+   - http://<ec2-instance-public-ip:8080/restart
+
    
 <img width="1392" alt="Screenshot 2023-02-01 at 12 17 02 PM" src="https://user-images.githubusercontent.com/43399466/215973898-7c366525-15db-4876-bd71-49522ecb267d.png">
 
 Wait for the Jenkins to be restarted.
 
+## Creating Pipeline-Job:
 
-```
-http://<ec2-instance-public-ip>:8080/restart
-```
+- Click on Create a job
+<img width="894" height="305" alt="image" src="https://github.com/user-attachments/assets/87928c6e-9ea0-47f8-85d5-2e091f166490" />
+
+- Enter Pipeline name, select "Pipeline" and click OK.
+<img width="1133" height="830" alt="image" src="https://github.com/user-attachments/assets/675e1a4b-8b0a-4a37-ad60-35f93cbfbc8d" />
+
+- Scroll down, under the definition select "Pipeline script from SCM"
+<img width="1291" height="482" alt="image" src="https://github.com/user-attachments/assets/9ffe48ca-d4a9-40db-8e59-bfe7e46bda32" />
+
+- Under SCM, select "Git", copy Github repository URL and edit branch as "main" after checking Github repositary's branch as shown in the image.
+<img width="1252" height="648" alt="image" src="https://github.com/user-attachments/assets/dc666f74-8852-4065-83d8-b3dd4a02d1a4" />
+
+- Copy and paste the file name and path from Github as prefix with Jenkinsfile like "My-first-pipeline/Jenkinsfile" and Save it as per screenshot.
+<img width="1255" height="220" alt="image" src="https://github.com/user-attachments/assets/38ce94ec-644d-46ae-adae-675a8ac1d1ef" />
+
+- To build pipeline, click on "Build now" and check for console output.
+<img width="858" height="486" alt="image" src="https://github.com/user-attachments/assets/462a7816-4db7-41b1-895f-a2ab6b2c94a1" />
+
+- You can see pipeline build is completed, and jenkins stop docker container as shown below.
+<img width="1402" height="736" alt="image" src="https://github.com/user-attachments/assets/ad2fd915-da7d-4baf-a639-9c98cbf0e652" />
+
+
+**By this method, Jenkins master requested a docker to create a conatainer for application by using "Docker Pipeline" plugin we configured. Docker creates a container, as soon as process is done it will terminate the conatainer.** 
+
+<img width="491" height="302" alt="image" src="https://github.com/user-attachments/assets/f5f77bf2-6b7b-465f-94d4-2ef21cb944ea" />
+
+
+**When there is a request a container is created, this is the approach and this is how saving the cost and time for worker node configuration upgrade.**
+<img width="444" height="315" alt="image" src="https://github.com/user-attachments/assets/af8add8a-cb33-448d-9e43-50cd3c43cd10" />
+
 
 The docker agent configuration is now successful.
 
